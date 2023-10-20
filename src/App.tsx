@@ -6,7 +6,7 @@ function App() {
   const viewDiv = React.useRef<any>();
   useEffect(() => {
     if (viewDiv.current) {
-      import("./data/webMap").then(app => app.initialize(viewDiv.current))
+      import("./data/webScene").then(app => app.initialize(viewDiv.current))
     }
   })
   return (
